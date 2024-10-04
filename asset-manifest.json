@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ryadnaji/static/css/main.240a1f6c.css",
-    "main.js": "/ryadnaji/static/js/main.e68cc334.js",
-    "static/media/img-pattern.svg": "/ryadnaji/static/media/img-pattern.148d9c075c75a3e657f7.svg",
-    "static/media/footer-form-pattern.svg": "/ryadnaji/static/media/footer-form-pattern.7fd6cfcfb07bdb471546.svg",
-    "static/media/footer-form-bg.png": "/ryadnaji/static/media/footer-form-bg.5919ceba950c7c4cb214.png",
-    "static/media/separator.svg": "/ryadnaji/static/media/separator.b98c0c4c2ec1b7cd5908.svg",
-    "index.html": "/ryadnaji/index.html",
-    "main.240a1f6c.css.map": "/ryadnaji/static/css/main.240a1f6c.css.map",
-    "main.e68cc334.js.map": "/ryadnaji/static/js/main.e68cc334.js.map"
+    "main.css": "/static/css/main.c45e9ac4.css",
+    "main.js": "/static/js/main.e68cc334.js",
+    "static/media/img-pattern.svg": "/static/media/img-pattern.148d9c075c75a3e657f7.svg",
+    "static/media/footer-form-pattern.svg": "/static/media/footer-form-pattern.7fd6cfcfb07bdb471546.svg",
+    "static/media/footer-form-bg.png": "/static/media/footer-form-bg.5919ceba950c7c4cb214.png",
+    "static/media/separator.svg": "/static/media/separator.b98c0c4c2ec1b7cd5908.svg",
+    "index.html": "/index.html",
+    "main.c45e9ac4.css.map": "/static/css/main.c45e9ac4.css.map",
+    "main.e68cc334.js.map": "/static/js/main.e68cc334.js.map"
   },
   "entrypoints": [
-    "static/css/main.240a1f6c.css",
+    "static/css/main.c45e9ac4.css",
     "static/js/main.e68cc334.js"
   ]
 }
