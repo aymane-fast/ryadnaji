@@ -31,6 +31,7 @@ const Header = () => {
 
                 <div className="logo">
                     <img  src="./assets/images/my-logo.png" width="80" height="50" alt="Ryad Naji Logo" className="header-logo"/>
+                    
                 </div>
 
                 <nav className="navbar" data-navbar>

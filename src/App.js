@@ -11,16 +11,11 @@ import Footer from "./components/footer";
 import Location from "./components/location";
 import Events from './components/events';
 import Video from './components/video';
+import Preloader from './components/preloader';
 
 function App() {
 
   useEffect(() => {
-    // Preloader
-    const preloader = document.querySelector("[data-preload]");
-    window.addEventListener("load", () => {
-      preloader?.classList.add("loaded");
-      document.body.classList.add("loaded");
-    });
 
     // Navbar toggling
     const navbar = document.querySelector("[data-navbar]");
@@ -125,14 +120,11 @@ function App() {
       });
     });
 
-  }, []); // Empty dependency array to run only once when the component mounts
-
+  }, []);
 
   return (
     <div className="App">
-
-
-      
+      <Preloader />
       <section>
         <Topbar />
         <Header />
