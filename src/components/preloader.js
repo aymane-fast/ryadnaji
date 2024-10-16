@@ -6,7 +6,8 @@ const usePreloader = () => {
     const preloader = document.querySelector("[data-preload]");
     const LOADER_INTERVAL = 1600;
     const LOADER_IMAGE = "./assets/images/my-logo.webp";
-    
+    const FALLBACK_TIMEOUT = 5000; // 5 seconds fallback timeout
+
     const cycleLoader = () => {
       const index = Math.floor(Math.random() * LOADERS.length);
       const selected = LOADERS[index];
@@ -41,11 +42,24 @@ const usePreloader = () => {
       });
     };
 
-    window.addEventListener("load", handleLoad);
+    if (window.addEventListener) {
+      window.addEventListener("load", handleLoad);
+    } else {
+      // Fallback for browsers that do not support window.addEventListener Set to 5 seconds
+      setTimeout(() => {
+        preloader?.classList.add("loaded");
+        document.body.classList.add("loaded");
+        clearInterval(interval); // Stop the cycle loader
+      }, FALLBACK_TIMEOUT);
+    }
 
     return () => {
       clearInterval(interval); // Stop the cycle loader
-      window.removeEventListener("load", handleLoad);
+      if (window.removeEventListener) {
+        window.removeEventListener("load", handleLoad);
+      } else {
+        // pass
+      }
     };
   }, []);
 };
