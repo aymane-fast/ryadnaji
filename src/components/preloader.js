@@ -45,7 +45,7 @@ const usePreloader = () => {
     if (window.addEventListener) {
       window.addEventListener("load", handleLoad);
     } else {
-      // Fallback for browsers that do not support window.addEventListener Set to 5 seconds
+      //Fallback for browsers that do not support window.addEventListener Set to 5 seconds
       setTimeout(() => {
         preloader?.classList.add("loaded");
         document.body.classList.add("loaded");
